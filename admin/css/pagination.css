@@ -1,0 +1,19 @@
+.nav_pagination {
+  position: relative;
+}
+.nav_pagination .pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav_pagination .pagination li a {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.nav_pagination .pagination li a:hover {
+  background-color: #fd5c63;
+}
+.nav_pagination .pagination li.active a {
+  border: solid 1px #ddd;
+  background-color: #fd5c63;
+}

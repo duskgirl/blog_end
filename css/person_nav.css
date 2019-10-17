@@ -1,0 +1,114 @@
+@charset 'utf-8';
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+button,
+input {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+}
+@media (max-width: 768px) {
+  .person_nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+  }
+  .person_nav ul .person_nav_item {
+    float: left;
+    width: 33.3333%;
+    border-bottom: solid 1px #ccc;
+  }
+  .person_nav ul .person_nav_item a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #51565e;
+  }
+  .person_nav ul .person_nav_item.active {
+    border: solid 1px #ccc;
+    border-bottom: none;
+  }
+}
+@media (min-width: 768px) {
+  .person_nav {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    border-right: solid 1px #eaeaea;
+  }
+  .person_nav .header {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .person_nav .header .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px #fd5c63;
+  }
+  .person_nav .header h3 {
+    color: #17a2b8;
+    padding-bottom: 10px;
+  }
+  .person_nav .header h3::before {
+    left: 50%;
+    transform: translateX(-100%);
+  }
+  .person_nav .header h3::after {
+    left: 50%;
+  }
+  .person_nav ul {
+    padding: 30px 0;
+    border-top: solid 1px  #eaeaea;
+  }
+  .person_nav ul .person_nav_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #51565e;
+  }
+  .person_nav ul .person_nav_item a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .person_nav ul .person_nav_item.active {
+    background-color: #333;
+  }
+  .person_nav ul .person_nav_item.active a {
+    color: #fff;
+  }
+}

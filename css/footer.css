@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .blog_footer {
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .blog_footer {
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+.blog_footer {
+  background-color: #fff;
+  color: #51565e;
+  text-align: center;
+  font-weight: bold;
+}

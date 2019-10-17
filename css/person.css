@@ -1,0 +1,148 @@
+@charset 'utf-8';
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+button,
+input {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+}
+@media (max-width: 768px) {
+  .blog_main {
+    padding-top: 60px;
+  }
+  .blog_main .mainbar {
+    padding-right: 0;
+    background-color: #fff;
+  }
+  .blog_main .mainbar .person_detail {
+    padding: 20px 10px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .blog_main {
+    padding-top: 90px;
+  }
+  .blog_main .person_detail {
+    padding-left: 240px;
+    padding-right: 40px;
+    background-color: #fff;
+  }
+}
+body {
+  background-color: #edeff2;
+}
+body .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+body .blog_main {
+  padding-left: 0;
+  position: relative;
+}
+body .blog_main .mainbar {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+}
+body .blog_main .mainbar .person_detail {
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+}
+body .blog_main .mainbar .person_detail .person_comment {
+  padding: 40px 0;
+}
+body .blog_main .mainbar .person_detail .person_comment h4 {
+  color: #51565e;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #eaeaea;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block {
+  border-bottom: solid 1px #f0f0f0;
+  padding: 10px 0;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block:last-of-type {
+  border-bottom: none;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_content {
+  padding: 5px 0;
+  font-weight: bold;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_content .content {
+  font-weight: normal;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_link {
+  background-color: #f7f7f7;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_link p {
+  border-bottom: solid 1px #f0f0f0;
+  padding: 10px;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_link p span {
+  font-weight: bold;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_link a {
+  display: block;
+  padding: 10px;
+  color: #4b4b4b;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_link a:hover {
+  background-color: #f0f0f0;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_interaction {
+  padding: 10px 0;
+  color: #a3a3a3;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_interaction span {
+  display: inline-block;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_interaction span:nth-of-type(2n+1) {
+  margin-left: 20px;
+}
+body .blog_main .mainbar .person_detail .person_comment .comment_block .comment_interaction span:first-of-type {
+  margin-left: 0;
+}
+body .blog_main .mainbar .person_detail .person_comment .no_comment {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 5px;
+  color: #adadad;
+}
+body .blog_main .mainbar .person_detail .person_comment .more_comment {
+  display: block;
+  color: #adadad;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 5px;
+}
+body .sidebar {
+  top: 90px;
+}

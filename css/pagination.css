@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .nav_pagination {
+    height: 54px;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .nav_pagination {
+    height: 114px;
+    padding: 40px;
+  }
+}
+.nav_pagination {
+  background-color: #fff;
+}
+.nav_pagination .pagination {
+  margin: 0;
+}
+.nav_pagination .pagination li a {
+  color: #444;
+  border: solid 1px #ddd;
+}
+.nav_pagination .pagination li a:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.nav_pagination .pagination li.active a {
+  background-color: #17a2b8;
+  color: #fff;
+}

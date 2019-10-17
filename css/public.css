@@ -1,0 +1,39 @@
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #17a2b8;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #fd5c63;
+}
+.red_point {
+  position: relative;
+}
+.red_point::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fd5c63;
+  border-radius: 50%;
+}

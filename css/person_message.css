@@ -1,0 +1,132 @@
+@charset 'utf-8';
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+button,
+input {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+}
+@media (max-width: 768px) {
+  .blog_main {
+    padding-top: 60px;
+  }
+  .blog_main .mainbar {
+    padding-right: 0;
+    background-color: #fff;
+  }
+  .blog_main .mainbar .person_detail {
+    padding: 20px 10px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .blog_main {
+    padding-top: 90px;
+  }
+  .blog_main .person_detail {
+    padding-left: 240px;
+    padding-right: 40px;
+    background-color: #fff;
+  }
+}
+body {
+  background-color: #edeff2;
+}
+body .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+body .blog_main {
+  padding-left: 0;
+  position: relative;
+}
+body .blog_main .mainbar {
+  width: 100%;
+  min-height: 550px;
+  position: relative;
+}
+body .blog_main .mainbar .person_detail {
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+}
+body .blog_main .mainbar .person_detail .person_message {
+  padding: 40px 0;
+}
+body .blog_main .mainbar .person_detail .person_message h4 {
+  color: #51565e;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #eaeaea;
+}
+body .blog_main .mainbar .person_detail .person_message .total {
+  margin-top: 20px;
+  color: #51565e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .blog_main .mainbar .person_detail .person_message .total .delete_message {
+  background-color: #17a2b8;
+  color: #fff;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message {
+  table-layout: fixed;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message thead .check {
+  width: 40px;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr .message {
+  overflow: hidden;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr .message a {
+  display: inline-block;
+  color: #51565e;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr .message a .email {
+  display: inline-block;
+  padding-right: 5px;
+  color: #fd5c63;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr.no_message {
+  text-align: center;
+  color: #fd5c63;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr.read .message a {
+  color: #ccc;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr.read .message a .email {
+  color: #ccc;
+}
+body .blog_main .mainbar .person_detail .person_message .table_message tbody tr.read .time {
+  color: #ccc;
+}
+body .sidebar {
+  top: 90px;
+}

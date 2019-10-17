@@ -1,0 +1,176 @@
+@charset 'utf-8';
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+button,
+input {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+}
+body {
+  background-color: #edeff2;
+}
+.blog_topbar .navbar-default {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+.blog_topbar .navbar-default .container {
+  position: relative;
+  height: 50px;
+}
+.blog_topbar .navbar-default .container .blog_nav {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 30px;
+  height: 100%;
+}
+.blog_topbar .navbar-default .container .blog_nav .nav_toggle {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  color: #17a2b8;
+  text-shadow: 0 0 2px #999;
+}
+.blog_topbar .navbar-default .container .blog_nav .nav_toggle span {
+  display: inline-block;
+  padding-top: 10px;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content .back {
+  background-color: #222;
+  margin: 0;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content .back .blog_nav_close {
+  color: #fff;
+  font-size: 25px;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content .back .blog_nav_close span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -2px;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content h3 {
+  padding: 150px 0 40px 0;
+  text-align: center;
+  color: #f9f9f9;
+  background-color: #17a2b8;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content li {
+  padding: 10px 0;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content li a {
+  display: block;
+  width: 100%;
+  color: #222;
+  text-align: center;
+}
+.blog_topbar .navbar-default .container .blog_nav .blog_nav_content li a:hover {
+  color: #17a2b8;
+}
+.blog_topbar .navbar-default .container .person_center {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  height: 100%;
+}
+.blog_topbar .navbar-default .container .person_center .no_login a {
+  background-color: #17a2b8;
+  color: #fff;
+  vertical-align: middle;
+}
+.blog_topbar .navbar-default .container .person_center .is_login {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .menu_toggle {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .menu_toggle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu {
+  display: none;
+  position: absolute;
+  width: 150px;
+  right: 0;
+  padding: 20px 0;
+  background: url('/img/person_menu.png') no-repeat;
+  background-size: 150px 120px;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: dashed 1px #ddd;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li.is_message a {
+  position: relative;
+  padding-right: 10px;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li.is_message a::before {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: #fd5c63;
+  border-radius: 50%;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li:last-of-type {
+  border-bottom: none;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li a {
+  color: #111;
+}
+.blog_topbar .navbar-default .container .person_center .is_login .person_menu li a:hover {
+  color: #17a2b8;
+}

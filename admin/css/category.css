@@ -1,0 +1,108 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  border: none;
+}
+button,
+input {
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0 none;
+}
+.ellipsis a {
+  display: block;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsis a:hover {
+  color: #17a2b8;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-fluid .blog_admin_main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container-fluid .blog_admin_main .blog_admin_center {
+  padding: 40px 0 0 220px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fluid .blog_admin_main .blog_admin_center .add_category {
+  padding-bottom: 20px;
+}
+.container-fluid .blog_admin_main .blog_admin_center .add_category .input-group {
+  margin-top: 40px;
+}
+.container-fluid .blog_admin_main .blog_admin_center .add_category .input-group .input-group-addon {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.container-fluid .blog_admin_main .blog_admin_center .add_category .input-group .input-group-btn > .btn {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.container-fluid .blog_admin_main .blog_admin_center h3 {
+  background: #17a2b8;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+}
+.container-fluid .blog_admin_main .blog_admin_center > table {
+  width: 100%;
+  margin-top: 30px;
+  table-layout: fixed;
+}
+.container-fluid .blog_admin_main .blog_admin_center > table tr {
+  width: 100%;
+}
+.container-fluid .blog_admin_main .blog_admin_center > table tr th {
+  text-align: center;
+}
+.container-fluid .blog_admin_main .blog_admin_center > table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+.container-fluid .blog_admin_main .blog_admin_center > table tr td .btn {
+  background-color: #17a2b8;
+  color: #fff;
+}
