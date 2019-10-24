@@ -19,6 +19,10 @@ if($_SERVER['REQUEST_METHOD'] === 'GET'){
     $search_value = $search_result;
     $where .= " and header like '%{$search_value}%'";
   }
+  if(!empty($_GET['category'])){
+    $category = $_GET['category'];
+    $where.=" and c.name = '{$category}'";
+  }
   $total_sql = "select 
   count('total') as totalRow 
   from article as a 
@@ -38,6 +42,7 @@ function getIndex(){
     $per_list =  $GLOBALS['$per_list'];
     $sql = "select 
     a.id,
+    c.name,
     header,
     pubtime,
     author,
@@ -122,7 +127,7 @@ function getIndex(){
           <p class="article_detail ellipsis">
             <span class="fa fa-calendar-check-o"></span><span> <?php echo $item['pubtime']?> </span>
             <span class="fa fa-user-o"></span><span> <?php echo $item['author']?> </span>
-            <span class="fa fa-folder-open-o "></span><span> 前端开发 </span>
+            <span class="fa fa-folder-open-o "></span><span> <?php echo $item['name']?> </span>
             <span class="fa fa-eye"></span><span> <?php echo $item['viewnumber']?> </span>
           </p>
           <p class="introduction hidden-xs ellipsis"><?php echo $item['introduction']?></p>

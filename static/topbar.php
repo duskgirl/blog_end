@@ -18,8 +18,8 @@ if(!empty($user['id'])){
           <p class="back"><a href="javascript:;" class="blog_nav_close"><span class="fa fa-window-close"></span></a></p>
           <h3>大思考</h3>
           <li><a href="/index.php"><span class="fa fa-home"></span>首页</a></li>
-          <li><a href="#">前端开发</a></li>
-          <li><a href="#">其它</a></li>
+          <li><a href="/index.php?category=前端开发">前端开发</a></li>
+          <li><a href="/index.php?category=其它">其它</a></li>
         </ul>
       </div>
       <div class="person_center">
